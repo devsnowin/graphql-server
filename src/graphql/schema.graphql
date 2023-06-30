@@ -1,0 +1,21 @@
+type User {
+  id: Int!
+  username: String!
+  email: String!
+  password: String!
+}
+
+type Book {
+  id: Int!
+  title: String!
+  description: String!
+  author: String!
+  year: Int!
+}
+
+# Queries
+
+type Query {
+  getUsers(limit: Int!): [User]
+  getBooks(limit: Int!): [Book]
+}
